@@ -15,11 +15,23 @@ let elDistance = document.getElementById("distance");
 let elAge = document.getElementById("age");
 console.log(elUserName, elDistance, elAge)
 let elPrintTicket = document.querySelector(".btn")
-
+let elPriceToPay = document.getElementById("pricetopay");
 
 elPrintTicket.addEventListener('click', function(){
-    let price = elDistance.value*0.21
-    let priceUnder18 = price*(1-0.2)
-    let priceOver65 = price*(1-0.4)
-    console.log(price, priceOver65, priceUnder18)
+    if (elAge.value = Minorenne) {
+        let price = price*(1 - 0.2) 
+    }
+        //  else if (age.value == over65) {
+    //     let price = price*(1 - 0.4)
+    // }
+   
+    // let price = elDistance.value*0.21
+    // let priceUnder18 = price*(1 - 0.2)
+    // let priceOver65 = price*(1 - 0.4)
+    // console.log(price, priceOver65, priceUnder18)
+    
+    // elPriceToPay.value = price;
+    // if (age = Minorenne) {
+
+    // }
 })
