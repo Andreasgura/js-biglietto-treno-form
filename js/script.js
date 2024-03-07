@@ -16,9 +16,10 @@ let elAge = document.getElementById("age");
 console.log(elUserName, elDistance, elAge)
 let elPrintTicket = document.querySelector(".btn")
 
-let price = elDistance*0.21
-let priceUnder18 = price*(1-0.2)
-let priceOver65 = price*(1-0.4)
 
-console.log(price)
-
+elPrintTicket.addEventListener('click', function(){
+    let price = elDistance.value*0.21
+    let priceUnder18 = price*(1-0.2)
+    let priceOver65 = price*(1-0.4)
+    console.log(price, priceOver65, priceUnder18)
+})
